@@ -31,14 +31,14 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Container (Slots Layout) */
+/* Container (3x5 Grid Layout) */
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+  grid-template-columns: repeat(3, 1fr); /* 3 Columns */
   gap: 15px;
   padding: 20px;
-  width: 100%;
-  max-width: 900px;
+  width: 80%;
+  max-width: 800px;
   justify-content: center;
 }
 
@@ -71,10 +71,10 @@ h1 {
 
 /* Icon Images */
 .icon-image {
-  width: 55px;  /* Adjust icon size */
+  width: 55px;
   height: 55px;
-  border-radius: 10px; /* Rounded corners */
-  object-fit: contain; /* Prevents stretching */
+  border-radius: 10px;
+  object-fit: contain;
 }
 
 /* Icon Name */
@@ -101,13 +101,6 @@ h1 {
 }
 
 /* RESPONSIVE DESIGN */
-
-/* Large Screens (Desktop) */
-@media screen and (min-width: 1024px) {
-  .container {
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  }
-}
 
 /* Medium Screens (Tablets) */
 @media screen and (max-width: 1023px) {
