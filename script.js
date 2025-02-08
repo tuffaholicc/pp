@@ -1,7 +1,7 @@
-// Generate 15x4 = 60 slots dynamically
-document.addEventListener("DOMContentLoaded", () => {
-  const container = document.getElementById("slots-container");
+document.addEventListener("DOMContentLoaded", function () {
+  const slotContainer = document.getElementById("slotContainer");
 
+  // Generate 3x20 = 60 slots dynamically
   for (let i = 1; i <= 60; i++) {
     const slot = document.createElement("div");
     slot.classList.add("slot");
@@ -11,24 +11,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const iconName = document.createElement("div");
     iconName.classList.add("icon-name");
-    iconName.innerText = `Icon ${i}`;
+    iconName.textContent = `Icon ${i}`;
 
     const copyButton = document.createElement("button");
     copyButton.classList.add("copy-btn");
-    copyButton.innerText = "Copy to Clipboard";
-    copyButton.addEventListener("click", () => copyText(iconName));
+    copyButton.textContent = "Copy to Clipboard";
+    copyButton.addEventListener("click", function () {
+      copyText(iconName);
+    });
 
     slot.appendChild(iconPlaceholder);
     slot.appendChild(iconName);
     slot.appendChild(copyButton);
 
-    container.appendChild(slot);
+    slotContainer.appendChild(slot);
   }
 });
 
-// Copy text function
-function copyText(iconName) {
-  navigator.clipboard.writeText(iconName.innerText).then(() => {
-    alert(`Copied: ${iconName.innerText}`);
+// Copy text to clipboard function
+function copyText(iconElement) {
+  const text = iconElement.textContent;
+  navigator.clipboard.writeText(text).then(() => {
+    alert(`Copied: ${text}`);
   });
 }
