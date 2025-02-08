@@ -21,7 +21,7 @@ body {
 
 /* Header */
 h1 {
-  font-size: 36px;
+  font-size: 42px; /* Increased size */
   color: white;
   margin: 20px 0;
   text-align: center;
@@ -31,31 +31,31 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Container (3x5 Grid Layout with More Horizontal Gap) */
+/* Container (3x5 Grid Layout, Less Gap) */
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 Columns */
-  gap: 40px 60px; /* 40px vertical gap, 60px horizontal gap */
+  gap: 20px 30px; /* 20px vertical gap, 30px horizontal gap */
   padding: 20px;
-  width: 80%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 900px;
   justify-content: center;
 }
 
-/* Slot Styling (Now Square) */
+/* Slot Styling (Now Bigger Square) */
 .slot {
-  background: rgba(138, 43, 143, 0.6);
-  padding: 15px;
-  border-radius: 15px;
+  background: rgba(138, 43, 143, 0.8);
+  padding: 20px;
+  border-radius: 20px;
   text-align: center;
-  width: 250px;
-  height: 250px; /* Now square */
+  width: 180px;
+  height: 180px; /* Now a larger square */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border: 2px solid rgba(106, 27, 106, 0.7);
-  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.4),
+  border: 3px solid rgba(106, 27, 106, 0.9);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4),
               inset 0px 3px 6px rgba(255, 255, 255, 0.2);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
 }
@@ -69,28 +69,29 @@ h1 {
     0 0 18px rgba(50, 10, 90, 0.8);
 }
 
-/* Icon Images */
+/* Icon Images (Larger) */
 .icon-image {
-  width: 55px;
-  height: 55px;
-  border-radius: 10px;
+  width: 80px;
+  height: 80px;
+  border-radius: 15px;
   object-fit: contain;
 }
 
-/* Icon Name */
+/* Icon Name (Larger) */
 .icon-name {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   font-weight: bold;
 }
 
-/* Copy Button */
+/* Copy Button (Larger) */
 .copy-btn {
   background: white;
   border: none;
-  padding: 6px 10px;
+  padding: 10px 14px;
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 10px;
+  font-size: 16px;
   font-weight: bold;
   transition: background 0.2s, transform 0.2s;
 }
@@ -106,7 +107,26 @@ h1 {
 @media screen and (max-width: 1023px) {
   .container {
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 30px; /* Slightly smaller gap */
+    gap: 20px; /* Slightly smaller gap */
+  }
+
+  .slot {
+    width: 170px;
+    height: 170px;
+  }
+
+  .icon-image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .icon-name {
+    font-size: 18px;
+  }
+
+  .copy-btn {
+    font-size: 14px;
+    padding: 8px 12px;
   }
 }
 
@@ -117,11 +137,24 @@ h1 {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .slot {
     width: 90%; /* Slightly larger on mobile */
-    height: 140px; /* Adjusted height for balance */
+    height: 160px;
+  }
+
+  .icon-image {
+    width: 70px;
+    height: 70px;
+  }
+
+  .icon-name {
+    font-size: 18px;
+  }
+
+  .copy-btn {
+    font-size: 14px;
   }
 }
