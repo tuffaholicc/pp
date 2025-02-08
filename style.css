@@ -35,7 +35,7 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 Columns */
-  gap: 40px 60px; /* 40px vertical gap, 60px horizontal gap */
+  gap: 40px 100px; /* 40px vertical gap, 60px horizontal gap */
   padding: 20px;
   width: 80%;
   max-width: 1000px;
