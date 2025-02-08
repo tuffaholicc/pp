@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const iconImage = document.createElement("img");
     iconImage.classList.add("icon-image");
-    iconImage.src = `icons/icon${i}.png`; // Icons should be named as icon1.png, icon2.png, etc.
+    iconImage.src = `icons/icon${i}.png`; // Assumes icon files are named as icon1.png, icon2.png, etc.
     iconImage.alt = `Icon ${i}`;
 
     const iconName = document.createElement("div");
