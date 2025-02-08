@@ -6,8 +6,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const slot = document.createElement("div");
     slot.classList.add("slot");
 
-    const iconPlaceholder = document.createElement("div");
-    iconPlaceholder.classList.add("icon-placeholder");
+    const iconImage = document.createElement("img");
+    iconImage.classList.add("icon-image");
+    iconImage.src = `icons/icon${i}.png`; // Icons should be named as icon1.png, icon2.png, etc.
+    iconImage.alt = `Icon ${i}`;
 
     const iconName = document.createElement("div");
     iconName.classList.add("icon-name");
@@ -20,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
       copyText(iconName);
     });
 
-    slot.appendChild(iconPlaceholder);
+    slot.appendChild(iconImage);
     slot.appendChild(iconName);
     slot.appendChild(copyButton);
 
