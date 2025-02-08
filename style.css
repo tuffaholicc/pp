@@ -69,13 +69,12 @@ h1 {
     0 0 18px rgba(50, 10, 90, 0.8);
 }
 
-/* Icon Placeholder */
-.icon-placeholder {
-  width: 55px;
+/* Icon Images */
+.icon-image {
+  width: 55px;  /* Adjust icon size */
   height: 55px;
-  background: black;
-  border-radius: 50%;
-  box-shadow: inset 0 0 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px; /* Rounded corners */
+  object-fit: contain; /* Prevents stretching */
 }
 
 /* Icon Name */
