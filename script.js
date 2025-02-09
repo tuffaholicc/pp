@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
   const slotContainer = document.getElementById("slotContainer");
 
-  // Generate 3x5 = 15 slots dynamically
-  for (let i = 1; i <= 15; i++) {
+  // Generate 5x5 = 25 slots dynamically
+  for (let i = 1; i <= 25; i++) {
     const slot = document.createElement("div");
     slot.classList.add("slot");
 
