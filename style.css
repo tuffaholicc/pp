@@ -53,7 +53,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center; /* Center everything */
   border: 3px solid rgba(106, 27, 106, 0.9);
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4),
               inset 0px 3px 6px rgba(255, 255, 255, 0.2);
@@ -75,13 +75,6 @@ h1 {
   height: 80px;
   border-radius: 15px;
   object-fit: contain;
-}
-
-/* Icon Name (Larger) */
-.icon-name {
-  font-size: 20px;
-  color: white;
-  font-weight: bold;
 }
 
 /* Copy Button (Larger) */
@@ -120,10 +113,6 @@ h1 {
     height: 75px;
   }
 
-  .icon-name {
-    font-size: 18px;
-  }
-
   .copy-btn {
     font-size: 14px;
     padding: 8px 12px;
@@ -148,10 +137,6 @@ h1 {
   .icon-image {
     width: 70px;
     height: 70px;
-  }
-
-  .icon-name {
-    font-size: 18px;
   }
 
   .copy-btn {
