@@ -11,19 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
     iconImage.src = `icons/icon${i}.png`; // Assumes icon files are named icon1.png, icon2.png, etc.
     iconImage.alt = `Icon ${i}`;
 
-    const iconName = document.createElement("div");
-    iconName.classList.add("icon-name");
-    iconName.textContent = `Icon ${i}`;
-
     const copyButton = document.createElement("button");
     copyButton.classList.add("copy-btn");
     copyButton.textContent = "Copy to Clipboard";
     copyButton.addEventListener("click", function () {
-      copyText(iconName);
+      copyText(`Icon ${i}`);
     });
 
     slot.appendChild(iconImage);
-    slot.appendChild(iconName);
     slot.appendChild(copyButton);
 
     slotContainer.appendChild(slot);
@@ -31,8 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Copy text to clipboard function
-function copyText(iconElement) {
-  const text = iconElement.textContent;
+function copyText(text) {
   navigator.clipboard.writeText(text).then(() => {
     alert(`Copied: ${text}`);
   });
