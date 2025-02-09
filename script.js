@@ -2,7 +2,7 @@ const iconFiles = [
   "POGG.webp", "catHug.webp", "DIESOFCRINGE.webp", "pepoClown.webp", "peepoShrug.webp",
   "NOWAYING.webp", "spongePls.webp", "CATBEDOINGTHELAUNDRY.webp", "NezukoSlide.webp", "Bedge.webp",
   "monkaBan.webp", "CrabPls.webp", "dekuHYPE.webp", "tenseSmash.webp", "HUHH.webp",
-  "SNIFFA.webp", "modCheck.webp", "peepoClap.webp", "POGG.webp", "Sadge.webp",
+  "SNIFFA.webp", "modCheck.webp", "peepoClap.webp", "blobDance.webp", "Sadge.webp",
   "weirdChamp.webp", "GIGACHAD.webp", "peepoWave.webp", "KEKW.webp", "Prayge.webp",
   "LETSGOOO.webp", "catJAM.webp", "monkaSHAKE.webp", "CAUGHT.webp", "COOKED.webp"
 ];
