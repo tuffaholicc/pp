@@ -21,7 +21,7 @@ body {
 
 /* Header */
 h1 {
-  font-size: 42px; /* Increased size */
+  font-size: 42px;
   color: white;
   margin: 20px 0;
   text-align: center;
@@ -31,25 +31,25 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-/* Container (3x5 Grid Layout, Less Gap) */
+/* Container (5x5 Grid Layout, Less Gap) */
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 Columns */
-  gap: 20px 30px; /* 20px vertical gap, 30px horizontal gap */
+  grid-template-columns: repeat(5, 1fr); /* 5 Columns */
+  gap: 15px 20px; /* 15px vertical gap, 20px horizontal gap */
   padding: 20px;
   width: 90%;
-  max-width: 900px;
+  max-width: 1000px;
   justify-content: center;
 }
 
 /* Slot Styling (Now Bigger Square) */
 .slot {
   background: rgba(138, 43, 143, 0.8);
-  padding: 20px;
+  padding: 15px;
   border-radius: 20px;
   text-align: center;
-  width: 180px;
-  height: 180px; /* Now a larger square */
+  width: 140px;
+  height: 140px; /* Square shape */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,8 +71,8 @@ h1 {
 
 /* Icon Images (Larger) */
 .icon-image {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   border-radius: 15px;
   object-fit: contain;
 }
@@ -81,10 +81,10 @@ h1 {
 .copy-btn {
   background: white;
   border: none;
-  padding: 10px 14px;
+  padding: 8px 12px;
   cursor: pointer;
-  border-radius: 10px;
-  font-size: 16px;
+  border-radius: 8px;
+  font-size: 14px;
   font-weight: bold;
   transition: background 0.2s, transform 0.2s;
 }
@@ -99,30 +99,30 @@ h1 {
 /* Medium Screens (Tablets) */
 @media screen and (max-width: 1023px) {
   .container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    gap: 20px; /* Slightly smaller gap */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
   }
 
   .slot {
-    width: 170px;
-    height: 170px;
+    width: 130px;
+    height: 130px;
   }
 
   .icon-image {
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
   }
 
   .copy-btn {
-    font-size: 14px;
-    padding: 8px 12px;
+    font-size: 12px;
+    padding: 6px 10px;
   }
 }
 
 /* Small Screens (Phones) */
 @media screen and (max-width: 600px) {
   .container {
-    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
   }
 
   h1 {
@@ -130,16 +130,16 @@ h1 {
   }
 
   .slot {
-    width: 90%; /* Slightly larger on mobile */
-    height: 160px;
+    width: 120px;
+    height: 120px;
   }
 
   .icon-image {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   .copy-btn {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
