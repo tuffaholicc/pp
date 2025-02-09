@@ -39,6 +39,7 @@ h2 {
   background: linear-gradient(90deg, #ffffff, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  box-shadow: #000000 0px 0px 10px;
 }
 /* Footer Styling */
 footer {
