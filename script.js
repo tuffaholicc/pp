@@ -37,4 +37,3 @@ document.addEventListener("DOMContentLoaded", function () {
 function copyText(text) {
   navigator.clipboard.writeText(text);
 }
-}
