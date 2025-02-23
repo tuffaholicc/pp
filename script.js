@@ -36,6 +36,5 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to Copy Text to Clipboard
 function copyText(text) {
   navigator.clipboard.writeText(text).then(() => {
-    alert(`Copied: ${text}`);
   });
 }
