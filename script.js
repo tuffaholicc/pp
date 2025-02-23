@@ -17,13 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const iconImage = document.createElement("img");
     iconImage.classList.add("icon-image");
     iconImage.src = `icons/${iconFiles[i]}`;
-    iconImage.alt = iconFiles[i].split(".")[0]; // Remove file extension
+    iconImage.alt = iconFiles[i].split(".")[0]; // Removes file extension
 
     const copyButton = document.createElement("button");
     copyButton.classList.add("copy-btn");
     copyButton.textContent = "Copy to Clipboard";
     copyButton.addEventListener("click", function () {
-      copyText(iconFiles[i].split(".")[0]); // Copy icon name without extension
+      copyText(iconFiles[i].split(".")[0]); // Copies only the icon name
     });
 
     slot.appendChild(iconImage);
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Function to Copy Text to Clipboard (Without Pop-up)
+// Function to Copy Text to Clipboard (No Pop-up)
 function copyText(text) {
   navigator.clipboard.writeText(text);
 }
