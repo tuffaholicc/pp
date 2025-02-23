@@ -33,8 +33,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Function to Copy Text to Clipboard
+// Function to Copy Text to Clipboard (Without Pop-up)
 function copyText(text) {
-  navigator.clipboard.writeText(text).then(() => {
-  });
+  navigator.clipboard.writeText(text);
+}
 }
